@@ -22,7 +22,7 @@ This kit consist of a main board with a TFT LCD screen (1.44" ST7735 driver) for
 * 1 serial to WIFI (ESP module)
 * 1 humidity and temperature sensor (DHT11)
 
-This repository is an attempt to port MicroPython codes to the CircuitPython environment (version 9) for educational projects.
+This repository is an attempt to port MicroPython codes to the CircuitPython environment for educational projects.
 
 ## Printed Circuit Board (PCB) :
 
