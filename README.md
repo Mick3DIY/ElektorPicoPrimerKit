@@ -53,7 +53,7 @@ Look at the [code](code/) folder to use example codes. **Work In Progress !**
 
 ## TODO :
 
-- [ ] [tft] Add code for checking the TFT LCD screen
+- [x] [tft] Add code for checking the TFT LCD screen
 - [ ] [tft][board] Add code for the push buttons, buzzer
 - [ ] [tft][ptr] Add code for he slide potentiometer
 - [ ] [tft][relay] Add code for the magnetic relay
