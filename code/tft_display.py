@@ -29,7 +29,7 @@ from adafruit_display_text import label
 import terminalio
 
 
-def init_display(splash_text="Pico\nPrimer\nKit", bg_color=0x000000, text_color=0xFFFF00, text_scale=2):
+def init_display(splash_text="Pico\nPrimer\nKit", bg_color=0x000000, text_color=0xFFFF00, text_scale=2, pos_x=5, pos_y=15):
     """Initialise the display and show a default message
     Return (display, splash)
     """
@@ -63,13 +63,13 @@ def init_display(splash_text="Pico\nPrimer\nKit", bg_color=0x000000, text_color=
     splash.append(bg_sprite)
     # Add the default text message
     text_label = label.Label(
-        terminalio.FONT, text=splash_text, color=text_color, scale=text_scale, x=5, y=20
+        terminalio.FONT, text=splash_text, color=text_color, scale=text_scale, x=pos_x, y=pos_y
     )
     splash.append(text_label)
     return display, splash
 
 
-def show_text(splash, splash_text, text_color=0xFFFF00, text_scale=2, pos_x=5, pos_y=20):
+def show_text(splash, splash_text, text_color=0xFFFF00, text_scale=2, pos_x=5, pos_y=15):
     """Replace the default message"""
     for i in range(len(splash) - 1, -1, -1):
         if isinstance(splash[i], label.Label):
