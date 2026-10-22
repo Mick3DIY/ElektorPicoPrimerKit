@@ -54,8 +54,8 @@ Look at the [code](code/) folder to use example codes. **Work In Progress !**
 ## TODO :
 
 - [x] [tft] Add code for checking the TFT LCD screen
-- [ ] [tft][board] Add code for the push buttons, buzzer
-- [ ] [tft][ptr] Add code for he slide potentiometer
+- [ ] [tft][board] Add code for the push buttons, onboard LEDs, buzzer
+- [ ] [tft][ptr] Add code for the slide potentiometer
 - [ ] [tft][relay] Add code for the magnetic relay
 - [ ] [tft][leds] Add code for the strip LEDs
 - [ ] [tft][imu] Add code for the IMU
@@ -78,6 +78,6 @@ Useful software :
 * Thonny IDE : https://thonny.org :ok_hand:
 
 > [!NOTE]
-> Big thanks to these different companies [Adafruit](https://www.adafruit.com), [Makerfabs](https://www.makerfabs.com), to all [Python](https://www.python.org/), [MicroPython](https://micropython.org), [CircuitPython](https://circuitpython.org) communities. :heart:
+> Big thanks to these different companies [Adafruit](https://www.adafruit.com), [Elektor](https://www.elektor.com), [Makerfabs](https://www.makerfabs.com), to all [Python](https://www.python.org/), [MicroPython](https://micropython.org), [CircuitPython](https://circuitpython.org) communities. :heart:
 
 Happy coding & have fun ! :partying_face:

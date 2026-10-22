@@ -7,5 +7,7 @@
 >
 > To upload example codes and run them in your Pico , you need a simple software like Tonny IDE : https://thonny.org
 
-First test, checking the TFT LCD screen :
-* `01_check_screen.py`
+First test before anything else :
+* `01_check_screen.py` : checking the TFT LCD screen (with the common code from `tft_display.py`)
+
+* `02_push_buttons.py` : using the onboard LEDs and buzzer
