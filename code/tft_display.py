@@ -28,8 +28,18 @@ from adafruit_display_text import label
 # https://docs.circuitpython.org/en/latest/shared-bindings/terminalio/
 import terminalio
 
+# Common colors (0xRRGGBB in hexadecimal format)
+TFT_BLACK = 0x000000
+TFT_RED = 0xFF0000
+TFT_YELLOW = 0xFFFF00
+TFT_GREEN = 0x00FF00
+TFT_BLUE = 0x0000FF
+TFT_CYAN = 0x00FFFF
+TFT_MAGENTA = 0xFF00FF
+TFT_WHITE = 0xFFFFFF
 
-def init_display(splash_text="Pico\nPrimer\nKit", bg_color=0x000000, text_color=0xFFFF00, text_scale=2, pos_x=5, pos_y=15):
+
+def init_display(splash_text="Pico\nPrimer\nKit", bg_color=TFT_BLACK, text_color=TFT_YELLOW, text_scale=2, pos_x=5, pos_y=15):
     """Initialise the display and show a default message
     Return (display, splash)
     """
@@ -69,7 +79,7 @@ def init_display(splash_text="Pico\nPrimer\nKit", bg_color=0x000000, text_color=
     return display, splash
 
 
-def show_text(splash, splash_text, text_color=0xFFFF00, text_scale=2, pos_x=5, pos_y=15):
+def show_text(splash, splash_text, text_color=TFT_YELLOW, text_scale=2, pos_x=5, pos_y=15):
     """Replace the default message"""
     for i in range(len(splash) - 1, -1, -1):
         if isinstance(splash[i], label.Label):
