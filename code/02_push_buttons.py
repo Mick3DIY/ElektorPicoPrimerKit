@@ -15,7 +15,7 @@ import board
 from digitalio import DigitalInOut, Direction, Pull
 
 # Initialise the screen
-display, splash = tft_display.init_display("Push buttons test\nwith LEDs", bg_color=0xFF0000, text_color=0xFFFFFF, text_scale=1)
+display, splash = tft_display.init_display("Push buttons test\nwith LEDs", bg_color=tft_display.TFT_RED, text_color=tft_display.TFT_WHITE, text_scale=1)
 
 # From the schematic, the buttons, LEDs pins are made with +3,3V (sinking method) by default
 # They turns ON when the pin is set to LOW !
@@ -50,19 +50,23 @@ try:
         else:
             led1.value = False
             tft_display.show_text(splash, "K1")
+            print("Button K1") # Prints for the Thonny IDE terminal
         if button_K2.value:
             led2.value = True
         else:
             led2.value = False
             tft_display.show_text(splash, "K2")
+            print("Button K2")
         if button_K3.value:
             led3.value = True
         else:
             led3.value = False
             tft_display.show_text(splash, "K3")
+            print("Button K3")
         # Buttons K1 + K3 to switch ON the buzzer
         if not button_K1.value and not button_K3.value:
             buzzer.value = True
+            print("Buzzzzzer !")
         else:
             buzzer.value = False
 except KeyboardInterrupt:
