@@ -29,6 +29,7 @@ from adafruit_display_text import label
 import terminalio
 
 # Common colors (0xRRGGBB in hexadecimal format)
+# More colors and formats : https://www.color-hex.com
 TFT_BLACK = 0x000000
 TFT_RED = 0xFF0000
 TFT_YELLOW = 0xFFFF00
