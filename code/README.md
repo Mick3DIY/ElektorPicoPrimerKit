@@ -16,3 +16,5 @@ If you don't have any error and see the default message, explore the other codes
 * `02_push_buttons.py` : using the onboard LEDs and buzzer
 
 * `03_potentiometer.py` : using the slide potentiometer
+
+* `04_relay.py` : using the magnetic relay with buttons

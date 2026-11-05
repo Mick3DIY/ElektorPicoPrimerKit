@@ -14,7 +14,7 @@ This kit consist of a main board with a TFT LCD screen (1.44" ST7735 driver) for
 
 * 3 push buttons, 3 LEDs, 1 buzzer, 6 connectors (on the board)
 * 1 slide potentiometer
-* 1 magnetic relay (10A)
+* 1 magnetic relay (SRD-03VDC-SL-C 10A)
 * 1 strip of 8 LEDs (WS2818)
 * 1 Inertial Measure Unit (IMU) MPU6050 with 6 axes (accelerometer, gyroscope)
 * 1 ultrasonic distance sensor (HC-SR04)
@@ -55,9 +55,9 @@ Look at the [code](code/) folder to use example codes. **Work In Progress !**
 
 - [x] [tft] Add code for checking the TFT LCD screen
 - [x] [tft][board] Add code for the push buttons, onboard LEDs, buzzer
-- [ ] [tft][ptr] Add code for the slide potentiometer **WIP**
-- [ ] [tft][relay] Add code for the magnetic relay
-- [ ] [tft][leds] Add code for the strip LEDs
+- [x] [tft][ptr] Add code for the slide potentiometer
+- [x] [tft][relay] Add code for the magnetic relay
+- [ ] [tft][leds] Add code for the strip LEDs **WIP**
 - [ ] [tft][imu] Add code for the IMU
 - [ ] [tft][dist] Add code for the distance sensor
 - [ ] [tft][servo] Add code for the servomotor
