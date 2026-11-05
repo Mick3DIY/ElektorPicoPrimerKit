@@ -1,4 +1,4 @@
-# Elektor Pico Primer Kit in CircuitPython
+# Elektor Pico Primer Kit in CircuitPython (check screen example)
 # GitHub project : https://github.com/Mick3DIY/ElektorPicoPrimerKit
 # Raspberry Pi Pico : https://www.raspberrypi.com/products/raspberry-pi-pico/
 # Documentation, tutorials : https://projects.raspberrypi.org

@@ -14,7 +14,7 @@ This kit consist of a main board with a TFT LCD screen (1.44" ST7735 driver) for
 
 * 3 push buttons, 3 LEDs, 1 buzzer, 6 connectors (on the board)
 * 1 slide potentiometer
-* 1 magnetic relay (10A)
+* 1 magnetic relay (SRD-03VDC-SL-C 10A)
 * 1 strip of 8 LEDs (WS2818)
 * 1 Inertial Measure Unit (IMU) MPU6050 with 6 axes (accelerometer, gyroscope)
 * 1 ultrasonic distance sensor (HC-SR04)
@@ -32,14 +32,14 @@ List of the connectors, pins, Pico GPIOs on the main board :
 
 *Credit : Makerfabs*
 
-| Connectors | Pin 1 | Pin 2 | Pin 3 | Pin 4 |
-|:----------:|:-----:|:-----:|:-----:|:-----:|
-| `CN1`      | GP1   | GP0   | VCC   | GND   |
-| `CN2`      | GP7   | GP6   | VCC   | GND   |
-| `CN3`      | GP9   | GP8   | VCC   | GND   |
-| `CN4`      | GP28  | GP27  | VCC   | GND   |
-| `CN5`      | GP26  | GP21  | VCC   | GND   |
-| `CN6`      | GP16  | GP17  | VCC   | GND   |
+| Connectors | Pin 1 | Pin 2 | Pin 3 | Pin 4 | Comment |
+|:----------:|:-----:|:-----:|:-----:|:-----:|:-------:|
+| `CN1`      | GP1   | GP0   | VCC   | GND   | |
+| `CN2`      | GP7   | GP6   | VCC   | GND   | |
+| `CN3`      | GP9   | GP8   | VCC   | GND   | |
+| `CN4`      | GP28  | GP27  | VCC   | GND   | |
+| `CN5`      | GP26  | GP21  | VCC   | GND   | Potentiometer |
+| `CN6`      | GP16  | GP17  | VCC   | GND   | |
 
 | Buttons | GPIO | LEDs    | GPIO |  Buzzer  | GPIO |
 |:-------:|:----:|:-------:|:----:|:--------:|:----:|
@@ -55,9 +55,9 @@ Look at the [code](code/) folder to use example codes. **Work In Progress !**
 
 - [x] [tft] Add code for checking the TFT LCD screen
 - [x] [tft][board] Add code for the push buttons, onboard LEDs, buzzer
-- [ ] [tft][ptr] Add code for the slide potentiometer
-- [ ] [tft][relay] Add code for the magnetic relay
-- [ ] [tft][leds] Add code for the strip LEDs
+- [x] [tft][ptr] Add code for the slide potentiometer
+- [x] [tft][relay] Add code for the magnetic relay
+- [ ] [tft][leds] Add code for the strip LEDs **WIP**
 - [ ] [tft][imu] Add code for the IMU
 - [ ] [tft][dist] Add code for the distance sensor
 - [ ] [tft][servo] Add code for the servomotor

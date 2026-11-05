@@ -29,6 +29,7 @@ from adafruit_display_text import label
 import terminalio
 
 # Common colors (0xRRGGBB in hexadecimal format)
+# More colors and formats : https://www.color-hex.com
 TFT_BLACK = 0x000000
 TFT_RED = 0xFF0000
 TFT_YELLOW = 0xFFFF00
@@ -40,7 +41,7 @@ TFT_WHITE = 0xFFFFFF
 
 
 def init_display(splash_text="Pico\nPrimer\nKit", bg_color=TFT_BLACK, text_color=TFT_YELLOW, text_scale=2, pos_x=5, pos_y=15):
-    """Initialise the display and show a default message
+    """Initialize the display and show a default message
     Return (display, splash)
     """
     # Connection pins for the SPI interface (from Makerfabs)
