@@ -32,14 +32,14 @@ List of the connectors, pins, Pico GPIOs on the main board :
 
 *Credit : Makerfabs*
 
-| Connectors | Pin 1 | Pin 2 | Pin 3 | Pin 4 |
-|:----------:|:-----:|:-----:|:-----:|:-----:|
-| `CN1`      | GP1   | GP0   | VCC   | GND   |
-| `CN2`      | GP7   | GP6   | VCC   | GND   |
-| `CN3`      | GP9   | GP8   | VCC   | GND   |
-| `CN4`      | GP28  | GP27  | VCC   | GND   |
-| `CN5`      | GP26  | GP21  | VCC   | GND   |
-| `CN6`      | GP16  | GP17  | VCC   | GND   |
+| Connectors | Pin 1 | Pin 2 | Pin 3 | Pin 4 | Comment |
+|:----------:|:-----:|:-----:|:-----:|:-----:|:-------:|
+| `CN1`      | GP1   | GP0   | VCC   | GND   | |
+| `CN2`      | GP7   | GP6   | VCC   | GND   | |
+| `CN3`      | GP9   | GP8   | VCC   | GND   | |
+| `CN4`      | GP28  | GP27  | VCC   | GND   | |
+| `CN5`      | GP26  | GP21  | VCC   | GND   | Potentiometer |
+| `CN6`      | GP16  | GP17  | VCC   | GND   | |
 
 | Buttons | GPIO | LEDs    | GPIO |  Buzzer  | GPIO |
 |:-------:|:----:|:-------:|:----:|:--------:|:----:|
@@ -55,7 +55,7 @@ Look at the [code](code/) folder to use example codes. **Work In Progress !**
 
 - [x] [tft] Add code for checking the TFT LCD screen
 - [x] [tft][board] Add code for the push buttons, onboard LEDs, buzzer
-- [ ] [tft][ptr] Add code for the slide potentiometer
+- [ ] [tft][ptr] Add code for the slide potentiometer **WIP**
 - [ ] [tft][relay] Add code for the magnetic relay
 - [ ] [tft][leds] Add code for the strip LEDs
 - [ ] [tft][imu] Add code for the IMU

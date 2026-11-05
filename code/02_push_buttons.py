@@ -14,7 +14,7 @@ import board
 # https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/index.html
 from digitalio import DigitalInOut, Direction, Pull
 
-# Initialise the screen
+# Initialize the screen
 display, splash = tft_display.init_display("Push buttons test\nwith LEDs", bg_color=tft_display.TFT_RED, text_color=tft_display.TFT_WHITE, text_scale=1)
 
 # From the schematic, the buttons, LEDs pins are made with +3,3V (sinking method) by default
