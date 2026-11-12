@@ -15,7 +15,12 @@ import board
 from digitalio import DigitalInOut, Direction, Pull
 
 # Initialize the screen
-display, splash = tft_display.init_display("Push buttons test\nwith LEDs", bg_color=tft_display.TFT_RED, text_color=tft_display.TFT_WHITE, text_scale=1)
+display, splash = tft_display.init_display(
+    "Push buttons test\nwith LEDs",
+    bg_color=tft_display.TFT_RED,
+    text_color=tft_display.TFT_WHITE,
+    text_scale=1,
+)
 
 # From the schematic, the buttons, LEDs pins are made with +3,3V (sinking method) by default
 # They turns ON when the pin is set to LOW !
@@ -50,7 +55,7 @@ try:
         else:
             led1.value = False
             tft_display.show_text(splash, "K1")
-            print("Button K1") # Prints for the Thonny IDE terminal
+            print("Button K1")  # Prints for the Thonny IDE terminal
         if button_K2.value:
             led2.value = True
         else:

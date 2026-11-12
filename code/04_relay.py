@@ -18,7 +18,12 @@ from digitalio import DigitalInOut, Direction, Pull
 import time
 
 # Initialize the screen
-display, splash = tft_display.init_display("Magnetic relay test\nwith push buttons", bg_color=tft_display.TFT_RED, text_color=tft_display.TFT_WHITE, text_scale=1)
+display, splash = tft_display.init_display(
+    "Magnetic relay test\nwith push buttons",
+    bg_color=tft_display.TFT_RED,
+    text_color=tft_display.TFT_WHITE,
+    text_scale=1,
+)
 
 # From the schematic, the buttons, LEDs pins are made with +3,3V (sinking method) by default
 # They turns ON when the pin is set to LOW !
@@ -50,15 +55,15 @@ try:
             if relay_state == False:
                 relay.value = True
                 tft_display.show_text(splash, "Relay is \nON TMP")
-                print("Relay : ON TMP") # Prints for the Thonny IDE terminal
+                print("Relay : ON TMP")  # Prints for the Thonny IDE terminal
         # Button K2 switch ON or OFF the magnetic relay
         if curr_button_K2_state == False and prev_button_K2_state == True:
-            relay_state = not relay_state # Toggle relay state
+            relay_state = not relay_state  # Toggle relay state
             relay.value = relay_state
             text_state = ("OFF", "ON")[relay_state]
             tft_display.show_text(splash, "Relay is {text_state}")
             print(f"Relay : {text_state}")
         prev_button_K2_state = curr_button_K2_state
-        time.sleep(0.05) # Debounce delay
+        time.sleep(0.05)  # Debounce delay
 except KeyboardInterrupt:
     pass

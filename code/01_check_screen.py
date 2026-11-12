@@ -9,5 +9,8 @@
 import tft_display
 
 # Only one call to check the screen
-tft_display.init_display(bg_color=tft_display.TFT_RED, text_color=tft_display.TFT_WHITE) # RGB colors from the module tft_display
-print("Did you see the default message on the LCD screen ?") # Print for the Thonny IDE terminal
+tft_display.init_display(
+    bg_color=tft_display.TFT_RED,  # RGB colors from the module tft_display
+    text_color=tft_display.TFT_WHITE,
+)
+print("Did you see the default message on the LCD screen ?")  # Print for the Thonny IDE terminal
