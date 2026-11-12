@@ -22,7 +22,7 @@ This kit consist of a main board with a TFT LCD screen (1.44" ST7735 driver) for
 * 1 serial to WIFI (ESP module)
 * 1 humidity and temperature sensor (DHT11)
 
-This repository is an attempt to port MicroPython codes to the CircuitPython environment for educational projects.
+This repository is an attempt to port **MicroPython codes to the CircuitPython environment** for educational projects.
 
 ## Printed Circuit Board (PCB) :
 
@@ -38,7 +38,7 @@ List of the connectors, pins, Pico GPIOs on the main board :
 | `CN2`      | GP7   | GP6   | VCC   | GND   | |
 | `CN3`      | GP9   | GP8   | VCC   | GND   | |
 | `CN4`      | GP28  | GP27  | VCC   | GND   | |
-| `CN5`      | GP26  | GP21  | VCC   | GND   | Potentiometer |
+| `CN5`      | GP26  | GP21  | VCC   | GND   | Potentiometer, magnetic relay |
 | `CN6`      | GP16  | GP17  | VCC   | GND   | |
 
 | Buttons | GPIO | LEDs    | GPIO |  Buzzer  | GPIO |
@@ -49,7 +49,9 @@ List of the connectors, pins, Pico GPIOs on the main board :
 
 ## Code :
 
-Look at the [code](code/) folder to use example codes. **Work In Progress !**
+Look at the [code](code/) folder to use CircuitPython example codes. **Work In Progress !**
+
+The original MicroPython codes from Elektor and Makerfabs are in the [archives](archives/) folder.
 
 ## TODO :
 
