@@ -15,7 +15,7 @@ This kit consist of a main board with a TFT LCD screen (1.44" ST7735 driver) for
 * 3 push buttons, 3 LEDs, 1 buzzer, 6 connectors (on the board)
 * 1 slide potentiometer
 * 1 magnetic relay (SRD-03VDC-SL-C 10A)
-* 1 strip of 8 LEDs (WS2818)
+* 1 strip of 8 LEDs (WS2812)
 * 1 Inertial Measure Unit (IMU) MPU6050 with 6 axes (accelerometer, gyroscope)
 * 1 ultrasonic distance sensor (HC-SR04)
 * 1 servomotor (SG90)
@@ -39,7 +39,7 @@ List of the connectors, pins, Pico GPIOs on the main board :
 | `CN3`      | GP9   | GP8   | VCC   | GND   | |
 | `CN4`      | GP28  | GP27  | VCC   | GND   | |
 | `CN5`      | GP26  | GP21  | VCC   | GND   | Potentiometer, magnetic relay |
-| `CN6`      | GP16  | GP17  | VCC   | GND   | |
+| `CN6`      | GP16  | GP17  | VCC   | GND   | Strip LEDs (WS2812) |
 
 | Buttons | GPIO | LEDs    | GPIO |  Buzzer  | GPIO |
 |:-------:|:----:|:-------:|:----:|:--------:|:----:|
@@ -59,8 +59,8 @@ The original MicroPython codes from Elektor and Makerfabs are in the [archives](
 - [x] [tft][board] Add code for the push buttons, onboard LEDs, buzzer
 - [x] [tft][ptr] Add code for the slide potentiometer
 - [x] [tft][relay] Add code for the magnetic relay
-- [ ] [tft][leds] Add code for the strip LEDs **WIP**
-- [ ] [tft][imu] Add code for the IMU
+- [x] [tft][leds] Add code for the strip LEDs
+- [ ] [tft][imu] Add code for the IMU **WIP**
 - [ ] [tft][dist] Add code for the distance sensor
 - [ ] [tft][servo] Add code for the servomotor
 - [ ] [tft][wifi] Add code for the WIFI
