@@ -4,10 +4,13 @@
 > First of all, you need to install CircuitPython (version 10.x, stable version) in your Raspberry Pi Pico !
 >
 > Follow this link for instructions and download it (in your language) :
+>
 > https://circuitpython.org/board/raspberry_pi_pico/
 >
 > The TFT LCD screen need external libraries (.mpy files) in the Pico "/lib" folder : `adafruit_st7735r`, `adafruit_display_text`.
+>
 > Don't forget to install it, check the file `tft_display.py` or install the CircuitPython Library Bundle (version 10.x) :
+>
 > https://circuitpython.org/libraries
 >
 > To upload example codes and run them in your Pico, you need a simple software like Tonny IDE : https://thonny.org
@@ -25,3 +28,7 @@ If you don't have any error and see the default message, explore the other codes
 * `04_relay.py` : using the magnetic relay with buttons
 
 * `05_leds_ws2812.py` : using the strip of 8 LEDs (WS2812)
+
+The slide potentiometer example with Thonny IDE and its plotter window :
+
+![Potentiometer example](../assets/03_Potentiometer.png)

@@ -12,6 +12,7 @@ import tft_display
 import board
 
 # https://docs.circuitpython.org/projects/neopixel/en/latest/
+# Don't forget to install this library (.mpy file) in the Pico "/lib" folder
 import neopixel
 
 # https://docs.circuitpython.org/en/latest/shared-bindings/time/
