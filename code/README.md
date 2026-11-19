@@ -29,6 +29,10 @@ If you don't have any error and see the default message, explore the other codes
 
 * `05_leds_ws2812.py` : using the strip of 8 LEDs (WS2812)
 
-The slide potentiometer example with Thonny IDE and its plotter window :
+* `06_imu_MPU6050.py` : using the Inertial Measure Unit (MPU6050)
+
+### Thonny IDE plotter window examples :
+
+The slide potentiometer example (`03_potentiometer.py`) :
 
 ![Potentiometer example](../assets/03_Potentiometer.png)
