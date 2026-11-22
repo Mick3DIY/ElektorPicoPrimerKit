@@ -24,5 +24,13 @@ from adafruit_mpu6050 import MPU6050
 import time
 
 # Inertial Measure Unit on GP9, GP8 (CN3)
+# /!\ CircuitPython requires pull-up resistors on SDA and SCL (4,7K Ohms each) /!\
+# This MPU6050 module don't have by default for MicroPython
 i2c = busio.I2C(board.GP9, board.GP8)
 mpu = MPU6050(i2c, address=0x68)
+
+while True:
+    print("Acceleration: X:%.2f, Y: %.2f, Z: %.2f m/s^2" % (mpu.acceleration))
+    print("Gyro X:%.2f, Y: %.2f, Z: %.2f degrees/s" % (mpu.gyro))
+    print("Temperature: %.1f C" % mpu.temperature)
+    time.sleep(0.5)
