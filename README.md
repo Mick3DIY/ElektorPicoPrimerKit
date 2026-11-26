@@ -60,8 +60,8 @@ The original MicroPython codes from Elektor and Makerfabs are in the [archives](
 - [x] [tft][ptr] Add code for the slide potentiometer
 - [x] [tft][relay] Add code for the magnetic relay
 - [x] [tft][leds] Add code for the strip LEDs
-- [ ] [tft][imu] Add code for the IMU **WIP**
-- [ ] [tft][dist] Add code for the distance sensor
+- [x] [tft][imu] Add code for the IMU (with pull-up resistors, to add)
+- [ ] [tft][dist] Add code for the distance sensor **WIP**
 - [ ] [tft][servo] Add code for the servomotor
 - [ ] [tft][wifi] Add code for the WIFI
 - [ ] [tft][dht11] Add code for the temperature sensor

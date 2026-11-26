@@ -29,7 +29,7 @@ If you don't have any error and see the default message, explore the other codes
 
 * `05_leds_ws2812.py` : using the strip of 8 LEDs (WS2812)
 
-* `06_imu_MPU6050.py` : using the Inertial Measure Unit (MPU6050)
+* `06_imu_MPU6050.py` : using the Inertial Measure Unit (MPU6050) with **pull-up resistors on SDA and SCL (4,7K Ohms each, to add)**
 
 ### Thonny IDE plotter window examples :
 
